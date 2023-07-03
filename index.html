@@ -1,75 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NRJ1J1RGWE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <title>Main</title>
+    <style>
+        .button-animation {
+            transform: scale(1); /* Initial scale */
+            transition: transform 0.3s ease; /* Transition effect */
+        }
+        body
+        {
+            margin-top: 15%;
+            background-color: #1D3F4C  ;
+            font-family: Gill Sans, sans-serif;
+            text-align: center;
+            font-size: 25px;
+        }
+        h1
+        {
+            font-size: 80px;
+            color: coral;
+        }
+        button
+        {
+            color: lightpink;
+            font-size: 30px;
+            background: #17313B;
+            width: auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            height: 35px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        footer a {
+            color: lightcoral;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        // JavaScript code to handle the button animation
+        document.addEventListener('DOMContentLoaded', function() {
+            var button = document.querySelector('button');
 
-    gtag('config', 'G-NRJ1J1RGWE');
-  </script>
-  <title>Main</title>
-  <style>
-    body
-    {
-      margin-top: 15%;
-      background-color: #1D3F4C  ;
-      font-family: Gill Sans, sans-serif;
-      text-align: center;
-      font-size: 25px;
-    }
-    h1
-    {
-      font-size: 80px;
-      color: coral;
-    }
-    button
-    {
-      color: lightpink;
-      font-size: 30px;
-      background: #17313B;
-      width: auto;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 15px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: black;
-      height: 35px;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-    footer a {
-      color: lightcoral;
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 20px;
-    }
-  </style>
-  <script>
-    function redirectToProjectPage() {
-      window.location.href = "MainPage.html"; // Redirect to project.html
-    }
-  </script>
+            button.addEventListener('mouseenter', function() {
+                button.classList.add('button-animation');
+            });
+
+            button.addEventListener('mouseleave', function() {
+                button.classList.remove('button-animation');
+            });
+
+            button.addEventListener('mousedown', function() {
+                button.style.transform = 'scale(0.9)'; /* Scale down when pressed */
+            });
+
+            button.addEventListener('mouseup', function() {
+                button.style.transform = 'scale(1)'; /* Restore original scale on release */
+            });
+        });
+
+        function redirectToProjectPage() {
+            window.location.href = "MainPage.html"; // Redirect to project.html
+        }
+    </script>
 </head>
 <body>
-  <h1>
+<h1>
     Welcome!
-  </h1>
-  <button onclick="redirectToProjectPage()">Learn more about me</button>
-  <footer>
+</h1>
+<button onclick="redirectToProjectPage()">Learn more about me</button>
+<footer>
     <a href="https://twitter.com/7dGrRVBVpzgl1m9/">Twitter</a>
     <a href="https://github.com/Ayako-q">GitHub</a>
     <a href=”https://www.instagram.com/_ayako.me/“>Instagram</a>
-  </footer>
+</footer>
 </body>
 </html>
