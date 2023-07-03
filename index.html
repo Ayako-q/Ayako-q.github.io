@@ -1,73 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Oleksii Ishchenko</title>
-    <style>
-        img{
-            border-radius: 50%;
-            width: 140px;
-            height: auto;
-            margin-top: 20px;
-        }
-        body {
-            background-color: #0B0E1A;
-            font-family: Gill Sans, sans-serif;
-            text-align: center;
-            font-size: 25px;
-        }
-        h1 {
-            color: coral;
-            font-family: Gill Sans, sans-serif;
-            font-size: 40px;
-            text-align: center;
-        }
-        p1 {
-            color: white;
-            text-align: center;
-        }
-        h2 {
-            color: white;
-            font-family: Gill Sans, sans-serif;
-            font-size: 30px;
-            text-align: center;
-        }
-        p2 {
-            color: lightpink;
-            font-size: 25px;
-        }
-        footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: black;
-            height: 35px;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-        footer a {
-            color: lightcoral;
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 20px;
-        }
-    </style>
+  <title>Main</title>
+  <style>
+    body
+    {
+      margin-top: 15%;
+      background-color: #1D3F4C  ;
+      font-family: Gill Sans, sans-serif;
+      text-align: center;
+      font-size: 25px;
+    }
+    h1
+    {
+      font-size: 80px;
+      color: coral;
+    }
+    button
+    {
+      color: lightpink;
+      font-size: 30px;
+      background: #17313B;
+      width: auto;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      height: 35px;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    footer a {
+      color: lightcoral;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  </style>
+  <script>
+    function redirectToProjectPage() {
+      window.location.href = "MainPage.html"; // Redirect to project.html
+    }
+  </script>
 </head>
 <body>
-    <img src="IMG copy.png" alt="Oleksii JPG">
-    <h1>Hi, I'm Oleksii</h1>
-    <p1>
-        And this is my personal page!<br> I am learning Java and currently studying at AUK University.<br>
-        I have an understanding of the basics of Java programming.<br> I'm passionate about coding and enjoy exploring new technologies.
-        <br> At this moment I live in the United States!
-    </p1>
-    <h2>My public email:</h2>
-    <p2>Ayakome.public@gmail.com</p2>
-    <footer>
-        <a href="https://twitter.com/7dGrRVBVpzgl1m9/">Twitter</a>
-        <a href="https://github.com/Ayako-q">GitHub</a>
-        <a href=”https://www.instagram.com/_ayako.me/“>Instagram</a>
-    </footer>
+  <h1>
+    Welcome!
+  </h1>
+  <button onclick="redirectToProjectPage()">Learn more about me</button>
+  <footer>
+    <a href="https://twitter.com/7dGrRVBVpzgl1m9/">Twitter</a>
+    <a href="https://github.com/Ayako-q">GitHub</a>
+    <a href=”https://www.instagram.com/_ayako.me/“>Instagram</a>
+  </footer>
 </body>
 </html>
