@@ -7,36 +7,74 @@
             transform: scale(1); /* Initial scale */
             transition: transform 0.3s ease; /* Transition effect */
         }
+
+        header
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #242323;
+            height: 35px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        header h1
+        {
+            position: fixed;
+            top: 0;
+            left: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
         .left-image
         {
             position: fixed;
             right: 0;
             top: 0;
-            width: 28%;
-            height: 100vh;
+            width: 300px;
+            height: 100%;
         }
         body
         {
             margin-top: 15%;
             background-color: Black ;
             font-family: Gill Sans, sans-serif;
-            font-size: 25px;
+            font-size: 25%;
         }
         h1
         {
+            text-align: center;
             position: fixed;
-            top: 100px;
-            left: 0;
-            font-size: 150px;
+            text-align: left;
+            top: 130px;
+            font-size: 135px;
+            color: white;
+        }
+
+        h2
+        {
+            font-family: Arial;
+            top: 355px;
+            text-align: left;
+
+            position: fixed;
+            font-size: 26px;
             color: white;
         }
         button
         {
             position: fixed;
-            top: 350px;
-            left: 0;
+            top: 410px;
+            text-align: left;
+            left:-10px;
+
             color: white;
-            font-size: 46px;
+            font-size: 30px;
             background: none;
             width: auto;
             padding: 10px 20px;
@@ -50,17 +88,61 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            background-color: #101010;
-            height: 35px;
+            background-color: #181818;
+            height: 80px;
             color: white;
             text-align: center;
             padding: 10px;
         }
         footer a {
-            color: white;
+            font-weight: normal;
+            color: whitesmoke;
             margin: 0 10px;
             text-decoration: none;
             font-size: 20px;
+        }
+        footer h4
+        {
+            text-align: center;
+            color: whitesmoke;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+        footer p2
+        {
+            font-weight: normal;
+            text-align: center;
+            color: whitesmoke;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        nav
+        {
+            margin-top: -5px;
+            margin-left: 87%;
+        }
+        a {
+            margin-top: 0px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        b {
+            margin-top: 0px;
+            text-decoration: none;
+            color: brown;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        section {
+            padding: 20px;
         }
     </style>
     <script>
@@ -89,15 +171,33 @@
             window.location.href = "MainPage.html"; // Redirect to project.html
         }
 
+
     </script>
 </head>
 <body>
 <img class="left-image" src="kanji.png" alt="Your Image">
+<header>
+    <h1>Oleksii Ishchenko</h1>
+
+    <nav>
+        <ul>
+            <li><b href="index.html">Home</b></li>
+            <li><a href="MainPage.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
 <h1>
     Welcome!
 </h1>
+
+<h2>
+    This is my personal presentation page, you can explore it!
+</h2>>
 <button onclick="redirectToProjectPage()">> Learn more about me <</button>
 <footer>
+    <h4>Contact Me:</h4>
+    <p2>Ayakome.public@gmail.com</p2>
     <a href="https://twitter.com/7dGrRVBVpzgl1m9/">Twitter</a>
     <a href="https://github.com/Ayako-q">GitHub</a>
     <a href=”https://instagram.com/_ayako.me?igshid=MjEwN2IyYWYwYw==“>Instagram</a>
